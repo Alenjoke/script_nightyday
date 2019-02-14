@@ -22,3 +22,6 @@ class ScriptNightydayPipeline(object):
         if isinstance(item, TXBoeItem):
             collection = self.db['TXBoe']
             collection.insert_one(item.__dict__)
+        if isinstance(item, WIProlicItem):
+            collection = self.db['WIProlic']
+            collection.insert_one(item.__dict__)

@@ -46,3 +46,11 @@ class TXBoeItem(scrapy.Item):
     zip = Field()
     county = Field()
     phone = Field()
+class WIProlicItem(scrapy.Item):
+    id = Field()
+    name = Field()
+    city = Field()
+    state = Field()
+    zip = Field()
+    profession = Field()
+    expiration = Field()
